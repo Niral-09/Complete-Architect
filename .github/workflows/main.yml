@@ -8,3 +8,7 @@ jobs:
       
       - name: Run a sample
         run: echo "This Wokflow run successfully."
+      - name: simulating error
+        run: echo "error taking place"; exit 1
+      - name: Super-Linter Check python linting
+        uses: github/super-linter@v4.10.0
